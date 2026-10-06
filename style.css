@@ -5905,23 +5905,19 @@ button {
 
 #final-video {
 
-    display:
-        block;
+    display: block;
 
-    width:
-        100%;
+    width: 100%;
 
-    max-height:
-        65vh;
+    aspect-ratio: 16 / 9;
 
-    border-radius:
-        22px;
+    border: 0;
 
-    background:
-        #000;
+    border-radius: 22px;
+
+    background: #000;
 
 }
-
 /* ============================================================
    HUB FINAL / TARTA
    ============================================================ */
