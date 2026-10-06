@@ -483,14 +483,8 @@ function showFinalVideo() {
         ).length;
 
 
-    /*
-     * Solo se puede abrir
-     * después de completar todo.
-     */
-
     if (
-        getCompletedCount() !==
-        total
+        getCompletedCount() !== total
     ) {
 
         return;
@@ -501,35 +495,6 @@ function showFinalVideo() {
     showScreen(
         screens.finalVideo
     );
-
-
-    /*
-     * Como viene de un clic directo,
-     * normalmente el navegador permitirá
-     * iniciar el vídeo.
-     */
-
-    if (finalVideo) {
-
-        finalVideo.currentTime =
-            0;
-
-
-        finalVideo
-            .play()
-            .catch(
-                () => {
-
-                    /*
-                     * Si el navegador bloquea
-                     * autoplay, simplemente
-                     * aparecerá el botón Play.
-                     */
-
-                }
-            );
-
-    }
 
 }
 
