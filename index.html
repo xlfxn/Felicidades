@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicidades señorita preciosa ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =====================================================
+         INICIO
+         ===================================================== -->
+    <main id="intro-screen" class="screen active">
+        <div class="intro-content">
+            <div class="intro-decoration">🎀</div>
+            <p class="eyebrow">Mi pequeño regalo de cumpleaños.</p>
+            <h1>Feliz cumpleaños amor</h1>
+            <p class="intro-text">
+                He intentado hacer algo un poco más especial.<br>
+                Te he preparado un espacio personalizado.
+            </p>
+            <button id="start-button" class="primary-button">Empecemos ✨</button>
+        </div>
+    </main>
+
+    <!-- =====================================================
+         HUB
+         ===================================================== -->
+    <main id="hub-screen" class="screen">
+        <header class="hub-header">
+            <div>
+                <p class="eyebrow">Este es tu espacio.</p>
+                <h2>Debes desbloquear tu camino</h2>
+            </div>
+            <div class="progress-container">
+                <span id="progress-text">0 / 7</span>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="world">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            <div class="cloud cloud-4"></div>
+            <div class="cloud cloud-5"></div>
+            <div class="cloud cloud-6"></div>
+
+            <button class="character character-chiikawa" data-character="chiikawa">
+                <div class="character-avatar">
+                    <img src="assets/characters/chiikawa.png" alt="Chiikawa" class="character-image">
+                    <span class="character-fallback">🌱</span>
+                </div>
+                <span class="character-name">Chiikawa</span>
+            </button>
+
+            <button class="character character-hachiware" data-character="hachiware">
+                <div class="character-avatar">
+                    <img src="assets/characters/hachiware.png" alt="Hachiware" class="character-image">
+                    <span class="character-fallback">💙</span>
+                </div>
+                <span class="character-name">Hachiware</span>
+            </button>
+
+            <button class="character character-cinnamoroll" data-character="cinnamoroll">
+                <div class="character-avatar">
+                    <img src="assets/characters/cinnamoroll.png" alt="Cinnamoroll" class="character-image">
+                    <span class="character-fallback">☁️</span>
+                </div>
+                <span class="character-name">Cinnamoroll</span>
+            </button>
+
+            <button class="character character-chococat" data-character="chococat">
+                <div class="character-avatar">
+                    <img src="assets/characters/chococat.png" alt="Chococat" class="character-image">
+                    <span class="character-fallback">🐱</span>
+                </div>
+                <span class="character-name">Chococat</span>
+            </button>
+
+            <button class="character character-usagi" data-character="usagi">
+                <div class="character-avatar">
+                    <img src="assets/characters/usagi.png" alt="Usagi" class="character-image">
+                    <span class="character-fallback">🐰</span>
+                </div>
+                <span class="character-name">Usagi</span>
+            </button>
+
+            <button class="character character-pompompurin" data-character="pompompurin">
+                <div class="character-avatar">
+                    <img src="assets/characters/pompompurin.png" alt="Pompompurin" class="character-image">
+                    <span class="character-fallback">🍮</span>
+                </div>
+                <span class="character-name">Pompompurin</span>
+            </button>
+
+            <button class="character character-momonga" data-character="momonga">
+                <div class="character-avatar">
+                    <img src="assets/characters/momonga.png" alt="Momonga" class="character-image">
+                    <span class="character-fallback">😈</span>
+                </div>
+                <span class="character-name">Momonga</span>
+            </button>
+
+            <button
+                id="final-cake-button"
+                class="birthday-card final-cake-button"
+                type="button"
+                aria-label="Abrir la sorpresa final"
+            >
+                🎂
+            </button>
+        </section>
+
+        <footer class="hub-footer">
+            <button id="reset-button" class="secondary-button">Pequeño reset al mundo.</button>
+        </footer>
+    </main>
+
+<!-- =====================================================
+     MENSAJE FINAL
+     ===================================================== -->
+
+<main id="final-video-screen" class="screen">
+
+    <section class="final-video-wrap">
+
+        <p class="eyebrow">
+            Una última cosa... 💙
+        </p>
+
+        <h2>
+            Hay algo que quería decirte
+        </h2>
+
+        <p class="final-video-intro">
+            Después de todo este pequeño recorrido,
+            quería dejarte unas palabras directamente de mi boca.
+        </p>
+
+
+        <div class="final-video-card">
+
+            <video
+                id="final-video"
+                controls
+                playsinline
+                preload="metadata"
+            >
+
+                <source
+                    src="assets/video/dedicatoria.mp4"
+                    type="video/mp4"
+                >
+
+                Tu navegador no puede reproducir este vídeo.
+
+            </video>
+
+        </div>
+
+
+        <button
+            id="final-video-back"
+            class="secondary-button"
+        >
+            ← Volver
+        </button>
+
+    </section>
+
+</main>
+
+    <!-- =====================================================
+         CHIIKAWA
+         ===================================================== -->
+    <main id="chiikawa-screen" class="screen">
+        <header class="experience-header">
+            <button id="chiikawa-back" class="back-button">← Volver</button>
+            <div class="experience-progress">
+                <span id="chiikawa-progress-text">0 / 3</span>
+                <div class="mini-progress-bar"><div id="chiikawa-progress-fill" class="mini-progress-fill"></div></div>
+            </div>
+        </header>
+
+        <section class="experience-wrap">
+            <div class="experience-intro">
+                <p class="eyebrow">Primera parada</p>
+                <h2>Te hemos preparado unas dedicatorias con Chiikawa 🌱</h2>
+                <p>Te dejo unas palabras para ti.<br>Escoge la que quieras, en verdad, no importa el orden.</p>
+            </div>
+            <div class="chiikawa-scene scene-card">
+                <button class="discovery discovery-1" data-discovery="0" aria-label="Descubrir sorpresa">✨</button>
+                <button class="discovery discovery-2" data-discovery="1" aria-label="Descubrir sorpresa">💕</button>
+                <button class="discovery discovery-3" data-discovery="2" aria-label="Descubrir sorpresa">⭐</button>
+                <div class="scene-character scene-character-center">
+                    <img src="assets/characters/chiikawa.png" alt="" class="scene-character-image" onerror="this.classList.add('image-error')">
+                    <span class="scene-character-fallback">🌱</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =====================================================
+         HACHIWARE
+         ===================================================== -->
+    <main id="hachiware-screen" class="screen">
+        <header class="experience-header">
+            <button id="hachiware-back" class="back-button">← Volver</button>
+            <div class="experience-progress">
+                <span id="hachiware-progress-text">0 / 4</span>
+                <div class="mini-progress-bar"><div id="hachiware-progress-fill" class="mini-progress-fill"></div></div>
+            </div>
+        </header>
+        <section class="experience-wrap">
+            <div class="experience-intro">
+                <p class="eyebrow">Un álbum para ti</p>
+                <h2>Hachiware guardó es nuestro guardian de los recuerdos 💙</h2>
+                <p>Estas son mis fotos favoritas de nosotros juntos, espero te gusten.</p>
+            </div>
+            <div id="hachiware-memory-grid" class="memory-grid"></div>
+
+            <div class="memory-page-navigation">
+
+                <button
+                    id="hachiware-prev-page"
+                    class="secondary-button"
+                    disabled
+                >
+                    ← Anteriores
+                </button>
+
+                <span id="hachiware-page-indicator">
+                    1 / 2
+                </span>
+
+                <button
+                    id="hachiware-next-page"
+                    class="primary-button"
+                >
+                    Siguientes →
+                </button>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- =====================================================
+         CINNAMOROLL
+         ===================================================== -->
+    <main id="cinnamoroll-screen" class="screen">
+        <header class="experience-header">
+            <button id="cinnamoroll-back" class="back-button">← Volver</button>
+            <div class="experience-progress">
+                <span id="cinnamoroll-progress-text">0 / 3</span>
+                <div class="mini-progress-bar"><div id="cinnamoroll-progress-fill" class="mini-progress-fill"></div></div>
+            </div>
+        </header>
+        <section class="experience-wrap">
+            <div class="experience-intro">
+                <p class="eyebrow">Una carta para ti</p>
+                <h2>El "boka chan ga oshiete kureta" te trae una carta por mi ☁️</h2>
+                <p>Puedes ir pasando página a página para ver todo el mensaje.</p>
+            </div>
+
+            <div
+                id="cinnamoroll-envelope-area"
+                class="cinnamoroll-envelope-area"
+            >
+
+                <button
+                    id="cinnamoroll-envelope"
+                    class="cinnamoroll-envelope"
+                    aria-label="Abrir carta"
+                >
+
+                    <div class="envelope-back"></div>
+
+                    <div class="envelope-letter-preview">
+                        💙
+                    </div>
+
+                    <div class="envelope-front"></div>
+
+                    <div class="envelope-flap"></div>
+
+                </button>
+
+
+                <button
+                    id="open-letter"
+                    class="primary-button"
+                >
+                    Abrir carta 💌
+                </button>
+
+            </div>
+
+
+            <div
+                id="cinnamoroll-letter"
+                class="cinnamoroll-letter"
+            >
+
+                <div class="letter-card">
+
+                    <div class="letter-decoration">
+                        ☁️
+                    </div>
+
+                    <p
+                        id="letter-eyebrow"
+                        class="eyebrow"
+                    >
+                        Página 1
+                    </p>
+
+                    <h3 id="letter-title">
+                        Para ti 💙
+                    </h3>
+
+                    <p id="letter-text">
+                        ...
+                    </p>
+
+                    <div class="letter-actions">
+
+                        <button
+                            id="letter-next"
+                            class="primary-button"
+                        >
+                            Seguir leyendo →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- =====================================================
+         CHOCOCAT
+         ===================================================== -->
+    <main id="chococat-screen" class="screen">
+        <header class="experience-header">
+            <button id="chococat-back" class="back-button">← Volver</button>
+            <div class="experience-progress">
+                <span id="chococat-progress-text">0 / 3</span>
+                <div class="mini-progress-bar"><div id="chococat-progress-fill" class="mini-progress-fill"></div></div>
+            </div>
+        </header>
+
+        <section class="experience-wrap chococat-wrap">
+            <div class="experience-intro">
+                <p class="eyebrow">Una pequeña investigación 🔎</p>
+                <h2>Tenemos una pequeña tarea para ti</h2>
+                <p>Hay algo en lo que estamos pensando ahora mismo.<br>Pero tienes que ser tú quien lo descubra.</p>
+            </div>
+
+            <div class="chococat-scene scene-card">
+                <div class="scene-cloud scene-cloud-1">☁️</div>
+                <div class="scene-cloud scene-cloud-2">☁️</div>
+                <div class="scene-spark scene-spark-1">✦</div>
+                <div class="scene-spark scene-spark-2">✧</div>
+
+                <button class="choco-clue choco-clue-1" data-clue="0" aria-label="Buscar la primera pista">🐾</button>
+                <button class="choco-clue choco-clue-2" data-clue="1" aria-label="Buscar la segunda pista">⭐</button>
+                <button class="choco-clue choco-clue-3" data-clue="2" aria-label="Buscar la tercera pista">🔎</button>
+
+                <!-- SEÑUELOS -->
+
+                <button class="choco-clue choco-decoy choco-decoy-1" type="button" aria-label="Investigar">🔑</button>
+
+                <button class="choco-clue choco-decoy choco-decoy-2" type="button" aria-label="Investigar">🎀</button>
+
+                <button
+                    class="choco-clue choco-decoy choco-decoy-3"
+                    type="button"
+                    aria-label="Investigar"
+                >
+                    🧩
+                </button>
+
+                <button
+                    class="choco-clue choco-decoy choco-decoy-4"
+                    type="button"
+                    aria-label="Investigar"
+                >
+                    💌
+                </button>
+
+                <button
+                    class="choco-clue choco-decoy choco-decoy-5"
+                    type="button"
+                    aria-label="Investigar"
+                >
+                    🌙
+                </button>
+
+                <div class="chococat-character">
+                    <div class="character-shadow"></div>
+                    <img src="assets/characters/chococat.png" alt="" class="scene-character-image" onerror="this.classList.add('image-error')">
+                    <span class="scene-character-fallback">🐱</span>
+                </div>
+
+                <div id="chococat-secret" class="chococat-secret" aria-hidden="true">
+                    <div class="secret-icon">🎁</div>
+                    <p class="eyebrow">Lograste encontrar todas las pistas</p>
+                    <h3>¿Adivinaste que era?</h3>
+                    <p>Prepárate para saber en qué pensábamos...</p>
+                    <button id="chococat-secret-button" class="primary-button">Descubrir el secreto ✨</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- =====================================================
+     USAGI
+     ===================================================== -->
+
+<main id="usagi-screen" class="screen">
+
+    <header class="experience-header">
+
+        <button
+            id="usagi-back"
+            class="back-button"
+        >
+            ← Volver
+        </button>
+
+
+        <div class="experience-progress">
+
+            <span id="usagi-progress-text">
+                0 / 5
+            </span>
+
+            <div class="mini-progress-bar">
+
+                <div
+                    id="usagi-progress-fill"
+                    class="mini-progress-fill"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section class="experience-wrap usagi-experience">
+
+        <div class="experience-intro">
+
+            <p class="eyebrow">
+                El desafío de Usagi 🐰
+            </p>
+
+            <h2>
+                ¿Reconoces estas palabras?
+            </h2>
+
+            <p>
+                Usagi ha decidido borrar algunas letras.
+                <br>
+                Tendrás que rellenar estas palabras relacionadas con nosotros.
+            </p>
+
+        </div>
+
+
+        <div class="usagi-game">
+
+            <!-- PERSONAJE -->
+
+            <div class="usagi-host">
+
+                <img
+                    src="assets/characters/usagi.png"
+                    alt=""
+                    class="usagi-host-image"
+                    onerror="this.classList.add('image-error')"
+                >
+
+                <span class="usagi-host-fallback">
+                    🐰
+                </span>
+
+            </div>
+
+
+            <!-- RONDA -->
+
+            <div id="usagi-round" class="usagi-round">
+
+                <p
+                    id="usagi-round-label"
+                    class="usagi-round-label"
+                >
+                    Palabra 1 de 5
+                </p>
+
+
+                <div
+                    id="usagi-word"
+                    class="usagi-word"
+                ></div>
+
+
+                <p
+                    id="usagi-feedback"
+                    class="usagi-feedback"
+                    aria-live="polite"
+                ></p>
+
+
+                <div class="usagi-actions">
+
+                    <button
+                        id="usagi-check"
+                        class="primary-button"
+                    >
+                        Comprobar ✨
+                    </button>
+
+
+                    <button
+                        id="usagi-next"
+                        class="primary-button usagi-next"
+                        style="display:none;"
+                    >
+                        Siguiente →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FINAL -->
+
+            <div
+                id="usagi-finish"
+                class="usagi-finish"
+            >
+
+                <div class="usagi-finish-icon">
+                    🐰
+                </div>
+
+                <p class="eyebrow">
+                    5 de 5
+                </p>
+
+                <h3>
+                    Espero que acertases todas.
+                </h3>
+
+                <p>
+                    Usagi ha sido derrotado.
+                </p>
+
+                <button
+                    id="usagi-finish-button"
+                    class="primary-button"
+                >
+                    Terminar juego ✨
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+    <!-- =====================================================
+         POMPOMPURIN
+         ===================================================== -->
+    <main id="pompompurin-screen" class="screen">
+
+        <header class="experience-header">
+
+            <button
+                id="pompompurin-back"
+                class="back-button"
+            >
+                ← Volver
+            </button>
+
+
+            <div class="experience-progress">
+
+                <span id="pompompurin-progress-text">
+                    0 / 3
+                </span>
+
+                <div class="mini-progress-bar">
+
+                    <div
+                        id="pompompurin-progress-fill"
+                        class="mini-progress-fill"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="experience-wrap pompompurin-experience">
+
+            <div class="experience-intro">
+
+                <p class="eyebrow">
+                    Unos regalitos para ti 🎀
+                </p>
+
+                <h2>
+                    Pompompurin ha estado cuidando los regalos por mi 🍮
+                </h2>
+
+                <p>
+                    Parece que son varios, ¿no?...
+                    <br>
+                    Puedes abrirlos en el orden que quieras.
+                </p>
+
+            </div>
+
+
+            <div class="pompompurin-stage">
+
+                <!-- PERSONAJE -->
+
+                <div class="pompompurin-host">
+
+                    <img
+                        src="assets/characters/pompompurin.png"
+                        alt=""
+                        class="pompompurin-host-image"
+                        onerror="this.classList.add('image-error')"
+                    >
+
+                    <span class="pompompurin-host-fallback">
+                        🍮
+                    </span>
+
+                </div>
+
+
+                <p class="pompompurin-hint">
+                    Psst... toca un regalo para abrirlo.
+                </p>
+
+
+                <!-- LOS REGALOS LOS GENERA JAVASCRIPT -->
+
+                <div
+                    id="pompompurin-gifts"
+                    class="pompompurin-gifts"
+                ></div>
+
+
+                <!-- APARECE AL ABRIR TODOS -->
+
+                <div
+                    id="pompompurin-finish"
+                    class="pompompurin-finish"
+                >
+
+                    <div class="pompompurin-finish-icon">
+                        🍮
+                    </div>
+
+                    <h3>
+                        De momento eso es todo
+                    </h3>
+
+                    <p>
+                        A pompompurin le da envidia de tus regalos.
+                    </p>
+
+                    <button
+                        id="pompompurin-finish-button"
+                        class="primary-button"
+                    >
+                        Terminar con Pompompurin ✨
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         MOMONGA
+         ===================================================== -->
+    <main id="momonga-screen" class="screen">
+
+        <header class="experience-header">
+
+            <button
+                id="momonga-back"
+                class="back-button"
+            >
+                ← Volver
+            </button>
+
+
+            <div class="experience-progress">
+
+                <span id="momonga-progress-text">
+                    0 / 5
+                </span>
+
+                <div class="mini-progress-bar">
+
+                    <div
+                        id="momonga-progress-fill"
+                        class="mini-progress-fill"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="experience-wrap momonga-experience">
+
+            <div class="experience-intro">
+
+                <p class="eyebrow">
+                    Una última travesura 😈
+                </p>
+
+                <h2>
+                    Momonga no piensa ponértelo fácil
+                </h2>
+
+                <p>
+                    Se ha escondido entre los arbustos.
+                    <br>
+                    Atrápalo 5 veces antes para que deje de esconderse.
+                </p>
+
+            </div>
+
+
+            <div class="momonga-game">
+
+                <div class="momonga-game-status">
+
+                    <span
+                        id="momonga-score"
+                        class="momonga-score"
+                    >
+                        0 puntos
+                    </span>
+
+                    <span
+                        id="momonga-message"
+                        class="momonga-message"
+                    >
+                        Ojo... puede aparecer en cualquier parte.
+                    </span>
+
+                </div>
+
+
+                <!--
+                    Los 6 arbustos los genera JavaScript.
+                -->
+
+                <div
+                    id="momonga-field"
+                    class="momonga-field"
+                ></div>
+
+
+                <!-- PREMIO -->
+
+                <div
+                    id="momonga-reward"
+                    class="momonga-reward"
+                >
+
+                    <div class="momonga-reward-media">
+
+                        <img
+                            id="momonga-reward-image"
+                            src=""
+                            alt="Premio de Momonga"
+                        >
+
+                        <span
+                            id="momonga-reward-fallback"
+                            class="momonga-reward-fallback"
+                        >
+                            📸
+                        </span>
+
+                    </div>
+
+
+                    <p class="eyebrow">
+                        5 / 5 ✨
+                    </p>
+
+                    <h3 id="momonga-reward-title">
+                        Te ganaste el premio 💕
+                    </h3>
+
+                    <p id="momonga-reward-text">
+                        Momonga ya no puede esconderlo.
+                    </p>
+
+
+                    <button
+                        id="momonga-complete"
+                        class="primary-button"
+                    >
+                        Guardar premio ✨
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         COMPLETADO
+         ===================================================== -->
+    <main id="completion-screen" class="screen">
+        <div class="completion-content">
+            <div id="completion-icon" class="completion-icon">✨</div>
+            <p id="completion-eyebrow" class="eyebrow">Aventura completada</p>
+            <h2 id="completion-title">¡Lo has conseguido!</h2>
+            <p id="completion-text">...</p>
+            <button id="completion-back" class="primary-button"> Cerrar ✨ </button>
+        </div>
+    </main>
+
+    <!-- =====================================================
+         MODAL
+         ===================================================== -->
+    <div id="placeholder-modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close" aria-label="Cerrar">×</button>
+            <div id="modal-standard-content">
+                <div id="modal-icon" class="modal-icon">✨</div>
+                <h3 id="modal-title">...</h3>
+                <p id="modal-description">...</p>
+            </div>
+            <div id="dynamic-content" class="dynamic-content" style="display:none;"></div>
+            <button id="modal-back" class="primary-button">Volver</button>
+        </div>
+    </div>
+
+    <script src="data/content.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
