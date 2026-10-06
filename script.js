@@ -3539,14 +3539,10 @@ finalVideoBack
         "click",
         () => {
 
-            if (finalVideo) {
-
-                finalVideo.pause();
-
-            }
-            
             showHub();
-});
+
+        }
+    );
 
 characterButtons.forEach(button => {
     button.addEventListener("click", () => {
